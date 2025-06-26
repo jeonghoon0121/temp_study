@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3번문제</title>
+</head>
+<body>
+    <h2>3번문제</h2>
+    <h1>회원가입</h1>
+        <form   action="#" method="get">
+            <!--필수입력사항-->
+            <fieldset>
+                <legend>
+                    필수 입력 사항
+                </legend>
+                
+                    <label><b>ID</b> </label>
+                     <input type="text"
+                     value=""
+                     name=""
+                     placeholder="아이디 10글자 이내">
+                     <input type="button" value="중복 확인">
+                     <br>
+
+                     <label><b>비밀번호</b> </label>
+                     <input type="password"
+                     value=""
+                     name=""
+                     placeholder="영문, 숫자, 특수문자 포함 8자 이상">
+                     <br>
+
+                     <label><b>비밀번호 확인 </b></label>
+                     <input type="password"
+                     value=""
+                     name="">
+                     <br>
+
+                     <label><b>Email</b> </label>
+                     <input type="email"
+                     value=""
+                     name="">
+
+                    <select name="nation" size="1" >
+                        <option value="N" selected >naver.com</option>
+                        <option value="" selected >직접입력</option>
+                    </select>
+                     <br>
+            </fieldset>
+
+
+
+
+
+            <!--추가 정보-->
+
+
+            <fieldset>
+                <legend>
+                    추가 정보
+                </legend>
+
+                    <label>프로필 사진 </label>
+                    <input type="file" name="uploadefile">
+                    <br>
+
+                    <label>성별 :  </label>
+                    <input type="radio" value="M" name="gen">
+                    <label>남자</label>
+                    <input type="radio" value="F" name="gen">
+                    <label>여자</label>
+                    <br>
+
+                    <label>생년월일 : </label>
+                    <input type="date" name="date">
+                    <br>
+
+                    <label>취미</label>
+                    <br>
+                        <input type="checkbox" id="baseball" value="야구" name="hobby" >
+                        <label for="baseball">야구</label>
+                        <input type="checkbox" id="basketball" value="농구" name="hobby" >
+                        <label for="basetball">농구</label>
+                        <input type="checkbox" id="football" value="축구" name="hobby" >
+                        <label for="football">축구</label>
+                    <br>
+                        <input type="checkbox" id="baseball" value="야구" name="hobby" checked>
+                        <label for="baseball">공부</label>
+                        <input type="checkbox" id="basketball" value="농구" name="hobby" >
+                        <label for="basetball">음악감상</label>
+                    <br>
+                        <input type="checkbox" id="baseball" value="야구" name="hobby" >
+                        <label for="baseball">기타</label>
+                    
+                    <input type="text">
+                    <br>
+                    <br>
+
+
+                    <label>자기소개</label>
+                    <br>
+                    <textarea style="resize:none;" cols="80" rows="10"></textarea>
+                    <br>
+            </fieldset>
+
+            
+            <!--3개버튼 -->
+
+            <input type="submit" value="회원가입">
+            <input type="reset" value="다시입력">
+            <input type="button" value="이전으로">
+        </form>
+
+</body>
+</html>
+
+
+<!--
+1.필수입력사항ㅇ
+2.추가정보
+3.밑의 버튼 ㅇ
+
+
+
+-->

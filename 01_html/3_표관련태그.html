@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본적인 표 만들기</title>
+
+
+
+
+    <!-- 여기서 색상을 지정한다. -->
+    <style>
+        thead{
+            background-color: aqua;
+        }
+        tbody{
+            background-color: chocolate;
+        }
+        tfoot{
+            background-color: dodgerblue;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>기본적인 표 만들기
+    </h1>
+    <table border="1">
+        <!--1픽셀만큼 솔리드 블랙-->
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                2
+            </td>
+            <td>
+                3
+            </td>
+        </tr>
+        <tr>
+            <td>
+                4
+            </td>
+            <td>
+                5
+            </td>
+            <td>
+                6
+            </td>
+        </tr>
+    <tr>
+            <td>
+                7
+            </td>
+            <td>
+                8
+            </td>
+            <td>
+                9
+            </td>
+        </tr>
+    </table>
+    <!-- 
+        <table> <tr> <th> <td>
+            <table>
+            <tr>    표의 행을 나타내는 태그
+            <th>    표의 제목 셀을 나타내는 태그
+            <td>    표의 일반셀
+    -->
+    <table border="1">
+        <caption><b>웹브라우저의 종류</b></caption>
+        <tr>
+            <th>브라우저명</th>
+            <th>제조사    </th>
+            <th>홈페이지</th>
+        </tr>
+        <tr>
+            <td>익스플로러</td>
+            <td>ms</td>
+            <td>https://www.microsoft.com</td>
+        </tr>
+        <tr>
+            <td>크롬</td>
+            <td>google</td>
+            <td>https://www.google.com</td>
+        </tr>
+        <tr>
+            <td>사파리</td>
+            <td>애플</td>
+            <td>https://www.apple.;com</td>
+        </tr>
+
+    </table>
+
+    <hr>
+    <!--
+        <td> 속성이용, 행 열 합치기
+            colspan 열합치기
+            rowspan 행합치기
+    -->
+
+    <h1>표 열,행합치기</h1>
+    <!-- 회원정보를 합치기-->
+
+    <table border="1">
+        <tr>
+            <td width="130px" height="150px" colspan="2" rowspan="2">사진</td>
+            <td width="80px">이름</td>
+            <td width="200px"></td>
+        </tr>
+        <tr>
+            <td>연락처</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td width="70px" height="50px">주소</td>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td height="100px">자기소개</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+
+    <hr>
+    <h2>테이블 태그의 구조 설정</h2>
+    <table border="1">
+        <thead> <!--thead로 감싸기-->
+            <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>주소</th>
+        </tr>
+        </thead>
+        <tbody><!--tbody로 감싸기-->
+            <tr>
+                <td>홍길동</td>
+                <td>20</td>
+                <td>서울시 서초구</td>
+            </tr>
+            <tr>
+                <td>김영희</td>
+                <td>24</td>
+                <td>서울시 강동구</td>
+            </tr>
+            <tr>
+                <td>이순신</td>
+                <td>30</td>
+                <td>경기도 남양주</td>
+            </tr>
+        </tbody>
+        <tfoot><!--tfoot로 감싸기-->
+            <tr>
+                <td colspan="2">총인원</td>
+                <td>3명</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
