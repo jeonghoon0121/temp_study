@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃스타일2</title>
+        <style>
+            div{
+                width: 100px;
+                height: 100px;
+                border-width: 3px;
+            }
+            .border-test1{
+                border-style:none;
+            }
+            .border-test2{
+                border-style:hidden;
+                box-shadow: 5px 5px 3px 2px red;
+                /*5픽셀 5픽셀 이동, 3px2px 그림자 흐리게*/
+            }
+            .border-test3{
+                border-style: dotted;
+            }
+            .border-test4{
+                border-style:dashed;
+                border-left-color:red;
+                border-top-color:blue;
+            }
+            .border-test5{
+                border-style:double;
+                border-color:blueviolet;
+            }
+            .border-test6{
+                border-style:groove;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+            .border-test7{
+                border-style:inset;
+                border-bottom-right-radius: 50px;
+            }
+            .border-test8{
+                border-style:outset;
+                border-top-left-radius:50px;
+                border-bottom-right-radius:50px;
+            }
+            .border-test9{
+            /*그루브와 반대*/
+                border-style:ridge;
+                box-shadow:5px 5px 3px 2px grey;
+            }
+            .border-test10{
+                border-style:solid;
+                box-shadow:5px 5px 3px 2px grey;
+            }
+            </style>
+            
+</head>
+<body>
+    <h1>테두리스타일</h1>
+        <div class="border-test1"></div>
+        <div class="border-test2"></div>
+        <div class="border-test3"></div>
+        <div class="border-test4"></div>
+        <div class="border-test5"></div>
+        <div class="border-test6"></div>
+        <div class="border-test7"></div>
+        <div class="border-test8"></div>
+        <div class="border-test9"></div>
+        <div class="border-test10"></div>
+</body>
+</html>

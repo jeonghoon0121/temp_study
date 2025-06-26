@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--20250624JeongHoon-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css선택자2</title>
+    <link rel="stylesheet" href="selector2.css">
+</head>
+<body>
+    <h2>기본속성선택자</h2>
+    <p>기본선택자 뒤에 []를 사용해 속성,속성값 사용
+        주로 id나 class이외를 사용
+    </p>
+        <div name="name1 name5 name6" class="div-class">div1</div>
+        <div name="name2" class="div=class">div2</div>
+        <div name="name3" class="div=class">div3</div>
+        <div name="name4" class="class-div">div4</div>
+
+    <h2>후손선택자 자손선택자</h2>
+    <p>자손선택자 바로아래요소 후손선택자 하위요소전부</p>
+    <div id="test1">
+        <h4>div의자손1</h4>
+        <h4>div의자손2</h4>
+        <h5>div의자손1</h5>
+        <h5>div의자손1</h5>
+        <div>
+            <ul id="test2">
+                <li>나는 ul자손이며 동시에div후손</li>
+                <li>나는 ul자손이며 동시에div후손</li>
+            </ul>
+        </div>
+
+    </div>
+    <hr>
+    <h2>동위 선택자</h2>
+    <p>동위 관계, 형제관계에서 뒤에 위치한 태그를 선택할 때 사용</p>
+        <div id="div-test1">div test1</div>
+        <div id="div-test2">div test2</div>
+        <div id="div-test3">div test3</div>
+        <div id="div-test4">div test4</div>
+        <div id="div-test5">div test5</div>
+    <hr>    
+    <h2>반응선택자</h2>
+        <p>사용자의 움직임에 따라 달라지는 선택자</p>
+        <div id="active-test">active test</div>
+        <div id="hover-test">hover test</div>
+        <hr>
+        <h2>상태선택자</h2>
+        <P>입력양식의 상태에 따라 선택되는 선택자</P>
+        <input type="checkbox" name="fruits" value="사과" id="apple">
+        <label for="apple">사과</label>
+        <input type="checkbox" name="fruits" value="바나나" id="banana">
+        <label for="apple">바나나</label>
+        <input type="checkbox" name="fruits" value="복숭아" id="peach">
+        <label for="apple">복숭아</label>
+        <hr>
+        <p>초점이 맞추어진 input태그 선택</p>
+        <label for="userId">아이디 : </label>
+        <input type="text" id="userId" placeholder="아이디를 입력">
+        <label for="userPwd">패스워드 :</label>
+        <input type="password" id="userPwd" placeholder="비번입력">
+
+
+        <p>사용가능한 인풋태그 선택</p>
+        <h3>당신의 연령대는></h3>
+            <select>
+                <option value="10" disabled>10대</option>
+                <option value="20">20대</option>
+                <option value="30">30대</option>
+                <option value="40">40대</option>
+                <option value="50">50대</option>
+                <option value="60" disabled>60대</option>
+            </select>
+
+        <input type="text" disabled>
+        <button disabled>버튼 </button>
+
+
+
+</body>
+</html>

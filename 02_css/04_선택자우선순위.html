@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자우선순위</title>
+    <style>
+        .test1{
+            background: yellow;
+            color:black;
+        }
+        div{
+            width:300px;
+            height:300px;
+            background:darkblue;
+        }
+        #test2{
+            background: plum;
+            color:aquamarine;
+        }
+        .test2{
+            background:blue !important;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택자 우선순위</h1>
+    <p>css속성은 위에서 아래로 진행
+        같은 태그에 여러개의 속성이 있을경우
+        우선순위에 따라 스타일이 적용됨
+    </p>
+    <pre>
+         태그선택자-클래스선택자-아이디선택자-인라인선택자-!important순서
+         인라인선택자 html요소에 직접 스타일을 적용하는 방법
+    </pre>
+    <hr>
+    <h2>선택자 우선순위 테스트</h2>
+    <div id="test1" class="test1">우선순위 테스트1</div>
+    <hr>
+    <h2>선택자 우선순위테스트</h2>
+    <p id="test2" class="test2" style="backgound: yellowgreen;"></p>
+
+
+
+</body>
+</html>

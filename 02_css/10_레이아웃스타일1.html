@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃스타일</title>
+        <style>
+        .size-test{
+                border: 2px solid red;
+        }
+        #test1{
+                width:800px;
+                height:200px;
+        }
+        #test2{
+                width:80%;
+                height:200px;
+        }
+        .block{
+            width: 150px;
+            height:130px;
+            border: 1px solid black;
+            color:white;
+            padding-top:20px;
+            padding-left:20px;
+        }
+        .area1{
+            background:red;
+        }
+        .area2{
+            background:blue;
+        }
+        .area3{
+            background:yellow;
+        }
+        .area4{
+            background:orange;
+        }
+        .area5{
+            background:green;
+        }
+        .block-test1{
+            display:inline;
+        }
+        .block-test2{
+            display: inline-block;
+            margin-left: -6px;;
+        }
+        .block-test3{
+            display: block;
+        }
+        .block-test4{
+            display: none;
+        }
+
+
+        </style>
+</head>
+<body>
+    <h1>레이아웃스타일1</h1>
+        <h3>width와 height</h3>
+            <p>내용이 차지하고 있는 영역의 크기를 조절할 수 있는 속성</p>
+                <h4>고정크기</h4>
+                    <div id="test1" class="size-test"></div>
+                <h4>가변크기</h4>
+                    <div id="test2" class="size-test"></div>
+    <hr>
+        <h3>화면 배치 방법 변경</h3>
+        <p>블럭요소와 인라인 요소의 속성을 변경하여 배치방식을 변경할 수 있다. </p>
+        <h4> 블럭 요소를 인라인 요소젼경</h4>
+        <pre>display: inline test</pre>
+        <pre>인라인 요소로 변경되며 고정속성이 무시됨</pre>
+            <div class="block block-test1 area1">첫번째영역</div>
+            <div class="block block-test1 area2">두번째영역</div>
+            <div class="block block-test1 area3">세번째영역</div>
+            <div class="block block-test1 area4">네번째영역</div>
+            <div class="block block-test1 area5">다섯번째영역</div>
+    <hr>
+        <h4>블럭요소를 인라인 블럭요소로 변경</h4>
+            <pre>display:inline-block테스트</pre>
+            <pre>영역은 인라인 요소로 변경되지만 내용은 블럭요소가 되어 weight height속성을 변경가능</pre>
+            
+            <div class="block block-test2 area1">첫번째영역</div>
+            <div class="block block-test2 area2">두번째영역</div>
+            <div class="block block-test2 area3">세번째영역</div>
+            <div class="block block-test2 area4">네번째영역</div>
+            <div class="block block-test2 area5">다섯번째영역</div>
+    <hr>
+        <h4>인라인 요소를 블럭 요소로 변경
+        </h4>
+            <pre>display:block테스트</pre>
+            <pre>인라인 요소를 블럭 요소로 변경하면 width와 height값을 지정할 수 있고 세로로 쌓인다. </pre>
+            <span class="block block-test3 area1">첫번째영역</span>
+            <span class="block block-test3 area2">두번째영역</span>
+            <span class="block block-test3 area3">세번째영역</span>
+            <span class="block block-test3 area4">네번째영역</span>
+            <span class="block block-test3 area5">다섯번째영역</span>
+            <hr>
+            <pre>display:none테스트</pre>
+            <pre>모달창에서 쓰임 </pre>
+            <span class="block block-test4 area1">첫번째영역</span>
+            <span class="block block-test4 area2">두번째영역</span>
+            <span class="block block-test4 area3">세번째영역</span>
+            <span class="block block-test4 area4">네번째영역</span>
+            <span class="block block-test4 area5">다섯번째영역</span>
+            <hr>
+</body>
+</html>
